@@ -1,0 +1,37 @@
+<div>
+<button ui-sref="state1" class="btn btn-default backButton">Back to search</button>
+</div>
+<div id="detailBackground">
+	<ul ng-repeat="details in vm.movieDetails[0]">
+		<h1 class="text-center detailTitle">{{details.Title}}</h1>
+		<h2 class="text-center detailLength">{{details.Rated}}, {{details.Runtime}}</h2>
+		<div class="content">
+			<div class="col-sm-offset-2 col-sm-2">
+				<img class="posterImg" src="{{details.Poster}}">
+				<label class="text-center col-sm-offset-6 movieYear">{{details.Released}}</label>
+			</div>
+			<div class="detailText">
+				<div class="col-sm-offset-1 col-sm-5">
+					<strong>IMDb Rating:</strong>
+					<p>{{details.imdbRating}}/10</p>
+				</div>
+				<div class="col-sm-offset-1 col-sm-5">
+					<strong>Director:</strong>
+					<p>{{details.Director}}</p>
+				</div>
+				<div class="col-sm-offset-1 col-sm-5">
+					<strong>Staring Actors:</strong>
+					<p>{{details.Actors}}</p>
+				</div>
+				<div class="col-sm-offset-1 col-sm-5">
+					<strong>Writer:</strong>
+					<p>{{details.Writer}}</p>
+				</div>
+				<div class="col-sm-5 col-sm-offset-1">
+					<strong>Plot:</strong>
+					<p>{{details.Plot}}</p>
+				</div>
+			</div>
+		</div>
+	</ul>
+</div>

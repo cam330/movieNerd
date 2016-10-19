@@ -1,0 +1,24 @@
+<h1 class="text-center">Movie Search</h1>
+<hr/>
+<div class="input-group col-sm-offset-3 col-sm-6">
+	<input type="text" name="search" class="form-control" ng-model="searchInput">
+	<div class="input-group-btn">
+		<button class="btn btn-default" ng-click="vm.search(searchInput)">Go!</button>
+	</div>
+</div>
+<div class="row">
+	<ul ng-repeat="movie in vm.movies[0].movie">
+		<div class="col-md-3">
+			<div class="panel panel-height panel-default">
+				<div class="panel-heading text-center">{{movie.Title}}</div>
+				<div class="panel-body">
+					<div>
+						<!-- This is the link the state2 along with setting the $stateParams with the imdbId -->
+						<a ui-sref="state2({movieDetailId: '{{movie.imdbID}}'})"><img class="poster col-md-12" src={{movie.Poster}}></a>
+						<label class="lead col-sm-12 text-center">Filmed in {{movie.Year}}</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</ul>
+</div>	

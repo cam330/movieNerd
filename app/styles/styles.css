@@ -1,0 +1,80 @@
+body
+{
+	padding: 10px 15px;
+}
+
+#detailBackground
+{
+	background-color: rgba(210, 210, 210, .5);
+	border-radius: 10px;
+}
+
+.backButton
+{
+	margin-top: 1em;
+
+}
+
+.posterImg
+{
+	width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    text-align: center;
+}
+
+.content
+{
+	margin-top: 2em;
+}
+
+.detailTitle
+{
+	font-size: 3em;
+}
+
+.detailLength
+{
+	margin-top: .5em;
+	font-size: 1.1em;
+}
+
+.detailReleased
+{
+	margin-top: .3em;
+	font-size: .9em;
+}
+
+.panel {
+
+   margin-bottom: 3em;
+   align-content:center;
+
+}
+
+.movieYear
+{
+	margin-top: .08em;
+	font-size: 1em;
+}
+
+.row
+{
+	padding:2em;
+}
+
+.panel-height
+{
+	max-height: 30em;
+	min-height: 30em;
+}
+
+.poster
+{
+	max-height: 20em;
+}
+
+.panel-heading
+{
+	max-height: 4em;
+	min-height: 4em;
+}
